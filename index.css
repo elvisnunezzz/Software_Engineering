@@ -1,44 +1,41 @@
 body {
-    opacity: 0; 
-    transition: opacity 3s;
-    font-family: 'Barlow', sans-serif;
-    /* text-align: center; */
-    background-image: url('https://pixy.org/download/4650332/');
+  opacity: 0;
+  transition: opacity 3s;
+  font-family: 'Barlow', sans-serif;
+ background-image: url('https://pixy.org/download/4650332/');
 
-  }
+}
 
-.navBar{
-    text-transform: uppercase; 
-    letter-spacing: 1.5px;
-    
+.navBar {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+}
 
-  .container div {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid black;
-  }
+.container div {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+}
 
-.navBar{
-    text-transform: uppercase; 
-    letter-spacing: 1.5px;
-    
+.navBar {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+}
 
-  .container div {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid black;
-  }
-  
-
+.container div {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+}
