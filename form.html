@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form</title>
+</head>
+<body>
+
+    <form action="POST">
+
+        <h1>Application form for bus driver </h1>
+            <section>
+            <h2>Personal information</h2>
+            <fieldset>
+              <legend>Please complete all the areas in this section</legend>
+              <ul>
+                  <li>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address"><br><br>
+                  </li>
+                </li>
+                <li>
+                  <label for="city">City/Town:</label>
+                  <input type="text" id="city" name="city"><br><br>
+                </li>
+                
+                <li>
+                    <label for="phone">Telephone No:</label>
+                    <input type="tel" id="phone" name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+
+
+                    <small>Format: 123-456-7890</small>
+                  </li>
+                  <br>
+                  
+                  <li>
+                    <label for="DriverClass">Driver's License Class</label>;
+                    <input type="text" id="DriverClass" name="DriverClass"><br><br>
+                  </li>
+              </ul>
+
+            
+
+    
+
+    <p><strong>Education:
+    </strong></p>
+
+    <table>
+        <tr>
+          <td><strong>School</strong></td>
+          <td><strong>Course of Study</strong></td>
+          <td><Strong>Last Year Completed</Strong></td>
+          <td><strong>Did you Graduate?</strong></td>
+          <td><strong>List Diploma or Degree awarded</strong></td>
+        </tr>
+        <tr>
+          <td>High School/GED</td>
+          <td><input type="text" id="school" name="school"></td>
+          <td><label for="year">Choose years:</label>
+            <select id="year">
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12" selected>12</option>
+            </select></td>
+
+          <td></label>
+            <input type="radio" name="school_yes_no" checked>Yes</input>
+            <input type="radio" name="school_yes_no">No</input>
+           </td>
+          <td><input type="text" id="schoolList" name="schoolList"></td>
+        </tr>
+        <tr>
+          <td>University</td>
+          <td><input type="text" id="university" name="university"></td>
+          <td><label for="CollegeYear">Choose years:</label>
+            <select id="CollegeYear">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4" selected>4</option>
+            </select></td>
+          <td><input type="radio" name="uni_yes_no" checked>Yes</input>
+            <input type="radio" name="uni_yes_no">No</input>
+           </td></td>
+          <td><input type="text" id="university_list" name="university_list"></td>
+        </tr>
+        <tr>
+          <td>Special Training</td>
+          <td><input type="text" id="SpecialTraining" name="SpecialTraining"></td>
+          <td><input type="text" id="yearTra" name="yearTra"></td>
+          <td><input type="radio" name="training_yes_no" checked>Yes</input>
+            <input type="radio" name="training_yes_no">No</input>
+           </td></td>
+          <td><input type="text" id="training_list" name="training_list"></td>
+        </tr>
+    
+      </table>
+</form>
+
+</body>
+</html>
