@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M&G School Bus</title>
+  <title>Login</title>
 
   <!-- Adding Bootsrap for better looks -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -12,7 +12,7 @@
 
   <!-- Adding Font from Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="login.css">
 
 
 </head>
@@ -31,27 +31,38 @@
         <ul class="navbar-nav mr-auto">
           <a class="nav-link " href="index.html" role="button">home</a>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="aboutUs.html" role="button">about us</a>
-          </li>
-          <li class="nav-item dropdown">
             <a class="nav-link" href="#" role="button">conctat us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="login.html" role="button">Log In</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="createAccount.html" role="button">Create Account</a>
+            <a class="nav-link" href="createAccount.html" role="button"> Create Account </a>
           </li>
         </ul>
       </div>
     </nav>
   </div>
 
-  <div class="imgIndex">
-  <img src="school_bus.png">
+  <div class="space"></div>
+  <!-- Login information -->
+  <div class="jumbotron">
+    <div class="container">
+      <!-- section get the information after the enter action occurs -->
+      <form method="GET" action="apply.html" >
+        <h4> <strong> Login </strong></h4>
+
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-outline-dark border-0">Submit</button>
+      </form>
+    </div>
   </div>
-  
+
   <!-- Js needed for the needed functionality -->
+  <script src="createAccount.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>

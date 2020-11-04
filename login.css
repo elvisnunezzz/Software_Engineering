@@ -1,0 +1,41 @@
+body {
+    opacity: 0;
+    transition: opacity 3s;
+    font-family: 'Barlow', sans-serif;
+    /* background-image: url('https://pixy.org/download/4650332/'); */
+
+}
+
+.navBar {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.space {
+    padding-bottom: 100px;
+}
+
+h4 {
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.jumbotron {
+    background: rgb(139, 228, 255);
+    border-radius: 20px 20px 20px 20px;
+    width: 310px;
+    height: 300px;
+    margin: auto;
+    padding-bottom: 80px;
+    box-shadow: 0 0 20px rgba(0, 0, 0.2);
+}

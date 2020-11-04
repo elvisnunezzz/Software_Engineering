@@ -2,7 +2,7 @@ body {
   opacity: 0;
   transition: opacity 3s;
   font-family: 'Barlow', sans-serif;
- background-image: url('https://pixy.org/download/4650332/');
+ /* background-image: url('https://pixy.org/download/4650332/'); */
 
 }
 
@@ -39,3 +39,9 @@ body {
   padding: 5px;
   border: 1px solid black;
 }
+
+.imgIndex {
+  padding-top: 150px;
+  text-align: center;
+}
+

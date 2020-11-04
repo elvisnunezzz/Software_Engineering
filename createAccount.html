@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+
+    <!-- Adding Bootsrap for better looks -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Adding Font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="createAccount.css">
+
+    <!-- Using sweetAlert for when we need to pop out an alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        // Small logic that checks if both password are correct or not!
+        function check(form) {
+            password1 = form.password.value;
+            password2 = form.passwordConf.value;
+   
+            if (password1 != password2) {
+                // alert("\nPassword did not match: Please try again...")
+                swal("Oops!", "Password did not match!", "error");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+    <!--Menu section  -->
+    <div class="navBar">
+        <nav class="navbar navbar-expand-md navbar-light lg-light ">
+            <a class="navbar-brand" href="index.html">M&G SCHOOL BUS </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <a class="nav-link" href="index.html" role="button">home</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="aboutUs.html" role="button">about us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button">conctat us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="login.html" role="button">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br><br>
+    <!-- Section that deals with inserting information into the database -->
+    <div class="jumbotron">
+        <div class="container">
+
+            <h1>Please fill out the following form to create your account!</h1>
+            <br>
+
+            <!-- Inserting data into [insert_data.php] to save information into the database. -->
+            <form method="POST" action="#" onSubmit="return check(this)">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control border-0" name="fName" placeholder="First name:"
+                            required>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control border-0" name="lName" placeholder="Last name:">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input type="tel" class="form-control border-0" name="phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number: 123-456-7890 " required>
+                            <!-- Robert remember to fix the pop out box -->
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control border-0" id="exampleInputEmail1" name="school_email" placeholder="Email:"
+                            required>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control border-0" name="password" id="password"
+                            placeholder="Password:" required>
+                            
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control border-0" name="passwordConf" id="passwordConf"
+                            placeholder="Confirm Password:" required>
+                    </div>
+                </div>
+                <br>
+                <button id="sign_in" type="submit" class="btn btn-outline-dark border-0 float-right">SIGN IN</button>
+            </form>
+        </div>
+    </div>
+  
+    <!-- Js needed for the needed functionality -->
+    <script src="createAccount.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
