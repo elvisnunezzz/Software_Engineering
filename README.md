@@ -1,4 +1,4 @@
-# M & G Bus Website
+# M & G School Bus Website
 This repo houses the asssets used to build the M&G Bus website, available at https://github.com/robertAHC/Software_Engineering/
 
 ## Tools
