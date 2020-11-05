@@ -24,7 +24,7 @@ Javascript logic is integrated into some elements f the site an is currently hos
 The website is temporarily hosted on an experimental platform, but will be ported to GitHub's services in short notice, which will allow more seamless testinhg and access.
 
 ## Run the M&G Bus website locally
-###Step 1: Download repo
+### Step 1: Download repo
 https://github.com/robertAHC/Software_Engineering
 
 ### Step 2: run index.html using modern web browser such as Chrome, Firefox, etc
