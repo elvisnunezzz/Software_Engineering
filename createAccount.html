@@ -50,7 +50,7 @@
                         <a class="nav-link" href="aboutUs.html" role="button">about us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" role="button">conctat us</a>
+                        <a class="nav-link" href="contact_us.html" role="button">contact us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="login.html" role="button">Log In</a>
@@ -68,7 +68,7 @@
             <br>
 
             <!-- Inserting data into [insert_data.php] to save information into the database. -->
-            <form method="POST" action="#" onSubmit="return check(this)">
+            <form method="POST" action="insert.php" onSubmit="return check(this)">
                 <div class="row">
                     <div class="col-sm-6">
                         <input type="text" class="form-control border-0" name="fName" placeholder="First name:"
@@ -88,8 +88,7 @@
                             <!-- Robert remember to fix the pop out box -->
                     </div>
                     <div class="col-sm-6">
-                        <input type="email" class="form-control border-0" id="exampleInputEmail1" name="school_email" placeholder="Email:"
-                            required>
+                        <input type="email" class="form-control border-0" id="user_email" name="user_email" placeholder="Email:" required>
                     </div>
                 </div>
 
@@ -111,7 +110,7 @@
             </form>
         </div>
     </div>
-  
+  <br><br><br>
     <!-- Js needed for the needed functionality -->
     <script src="createAccount.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

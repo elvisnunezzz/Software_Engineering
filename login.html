@@ -31,7 +31,10 @@
         <ul class="navbar-nav mr-auto">
           <a class="nav-link " href="index.html" role="button">home</a>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" role="button">conctat us</a>
+            <a class="nav-link" href="aboutUs.html" role="button">about us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="contact_us.html" role="button">conctat us</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="createAccount.html" role="button"> Create Account </a>
@@ -46,15 +49,14 @@
   <div class="jumbotron">
     <div class="container">
       <!-- section get the information after the enter action occurs -->
-      <form method="GET" action="apply.html" >
+      <form method="POST" action="apply.php" >
         <h4> <strong> Login </strong></h4>
 
         <div class="form-group">
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Enter email">
+          <input type="email" class="form-control border-0" name="username" placeholder="Email:" required>
         </div>
         <div class="form-group">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="password" class="form-control border-0" name="password" placeholder="Password:" required>
         </div>
         <button type="submit" class="btn btn-outline-dark border-0">Submit</button>
       </form>
